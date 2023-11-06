@@ -1,0 +1,17 @@
+class Main {
+    public static void main(String[] args) {
+        int[] myArray = {1,2,3,4,5,6};
+        int result = sumEvenNum(myArray);
+        System.out.println("sum of the even numbers: " + result);
+    }
+    
+    public static int sumEvenNum(int[] arr) {
+        int evenSum = 0;
+        for (int num : arr) {
+            if (num % 2 == 0) {
+                evenSum += num;
+            }
+        }
+        return evenSum;
+    }
+}
